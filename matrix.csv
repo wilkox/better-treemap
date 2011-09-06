@@ -1,0 +1,93 @@
+name,contrib,category,reldif
+thymidylate synthase (FAD) ,2.02,gene,0.0716510903426791
+ribonucleoside-diphosphate reductase alpha chain ,2.01,gene,0.0026246719160105
+ribonucleoside-diphosphate reductase beta chain ,1.65,gene,-0.037542662116041
+aminomethyltransferase ,1.43,gene,0.0706860706860707
+DNA polymerase I ,0.46,gene,-0.0215384615384616
+2-isopropylmalate synthase ,0.44,gene,0.105
+DNA-directed RNA polymerase subunit omega ,0.40,gene,0.0681818181818182
+cyclopropane-fatty-acyl-phospholipid synthase ,0.39,gene,0.044776119402985
+thymidylate synthase ,0.37,gene,-0.128321943811693
+L-lactate dehydrogenase (cytochrome) ,0.34,gene,0.134020618556701
+enoyl-CoA hydratase ,0.31,gene,0.0759493670886077
+aldehyde dehydrogenase (NAD+) ,0.31,gene,0.012448132780083
+alcohol dehydrogenase ,0.30,gene,0.0277777777777778
+F-type H+-transporting ATPase subunit c ,0.24,gene,-0.00719424460431655
+UDP-glucose 4-epimerase ,0.23,gene,0.0403225806451613
+cytochrome c oxidase subunit III ,0.22,gene,-0.0561797752808989
+3-oxoacyl-[acyl-carrier protein] reductase ,0.22,gene,0.0481283422459893
+cobaltochelatase CobS ,0.22,gene,0.162303664921466
+homoserine O-acetyltransferase ,0.22,gene,0.131474103585657
+3-hydroxyisobutyrate dehydrogenase ,0.21,gene,0.133093525179856
+myo-inositol-1(or 4)-monophosphatase ,0.21,gene,0.0844155844155845
+F-type H+-transporting ATPase subunit b ,0.21,gene,0.0796915167095116
+acyl-CoA dehydrogenase ,0.20,gene,0.1328125
+cytochrome c oxidase subunit II ,0.20,gene,-0.0512820512820513
+dUTP pyrophosphatase ,0.19,gene,0.0247933884297521
+DNA (cytosine-5-)-methyltransferase ,0.18,gene,-0.0774818401937046
+gamma-glutamyltranspeptidase ,0.18,gene,0.190789473684211
+taurine dioxygenase ,0.18,gene,0.157509157509157
+78-dihydro-8-oxoguanine triphosphatase ,0.18,gene,-0.333333333333333
+3-hydroxydecanoyl-[acyl-carrier-protein] dehydratase ,0.18,gene,0.125
+branched-chain amino acid aminotransferase ,0.17,gene,0.0748299319727891
+dihydrodipicolinate synthase ,0.17,gene,0.0121654501216544
+Xaa-Pro dipeptidase ,0.17,gene,0.0232558139534884
+cobaltochelatase CobT ,0.16,gene,0.189488243430152
+6-pyruvoyl tetrahydrobiopterin synthase ,0.16,gene,-0.268292682926829
+inorganic pyrophosphatase ,0.16,gene,0.0360934182590233
+glutamine synthetase ,0.16,gene,0.00928792569659444
+DNA polymerase V ,0.16,gene,0.130232558139535
+GTP cyclohydrolase I ,0.16,gene,0.00869565217391305
+GDPmannose 46-dehydratase ,0.16,gene,-0.0280373831775701
+threonine dehydratase ,0.16,gene,-0.108071135430917
+cytochrome c oxidase subunit I ,0.15,gene,-0.0607028753993611
+sarcosine oxidase subunit gamma ,0.15,gene,0.064030131826742
+enoyl-[acyl-carrier protein] reductase I ,0.15,gene,0.1
+histidinol dehydrogenase ,0.15,gene,0
+glutathione reductase (NADPH) ,0.15,gene,-0.208247422680412
+sarcosine oxidase subunit beta ,0.15,gene,0.0303030303030303
+phosphonoacetate hydrolase ,0.15,gene,-0.689152725310308
+galactarate dehydratase ,0.15,gene,0.174377224199288
+hydroxyacylglutathione hydrolase ,0.15,gene,0.0217391304347825
+agmatinase ,0.14,gene,0.0214067278287462
+24-dihydroxyhept-2-ene-17-dioic acid aldolase ,0.14,gene,0.37027027027027
+NADH dehydrogenase I subunit B ,0.14,gene,0.0965940815187046
+glycine amidinotransferase ,0.14,gene,0.131195335276968
+FKBP-type peptidyl-prolyl cis-trans isomerase SlyD ,0.14,gene,-0.504873294346978
+cysteine synthase A ,0.14,gene,0.123595505617977
+UDP-N-acetylmuramoylalanyl-D-glutamyl-26-diaminopimelate--D-alanyl-D-alanine ligase ,0.14,gene,0.0263157894736842
+L-serine dehydratase ,0.14,gene,-0.488636363636364
+urocanate hydratase ,0.14,gene,-0.493230174081238
+glutathione S-transferase ,0.14,gene,0.0764587525150906
+lysyl-tRNA synthetase class I ,0.13,gene,0.148831488314883
+repressor LexA ,0.13,gene,0.0834248079034028
+NAD(P) transhydrogenase subunit alpha ,0.13,gene,0.0743243243243243
+NADH dehydrogenase I subunit K ,0.13,gene,-0.00424178154825024
+fumarate hydratase class II ,0.13,gene,0.10955710955711
+acetolactate synthase I/II/III large subunit ,0.13,gene,0.0605187319884726
+modification methylase ,0.13,gene,0.169513797634691
+phosphoribosyl-AMP cyclohydrolase ,0.13,gene,0.0560747663551402
+adenine phosphoribosyltransferase ,0.13,gene,0.131868131868132
+4a-hydroxytetrahydrobiopterin dehydratase ,0.13,gene,0.0578512396694215
+3-demethylubiquinone-9 3-methyltransferase ,0.13,gene,0.0957551826258638
+3-oxoacyl-[acyl-carrier-protein] synthase III ,0.13,gene,-0.063258785942492
+3-oxoacyl-[acyl-carrier-protein] synthase I ,0.12,gene,0.0756302521008403
+glyceraldehyde 3-phosphate dehydrogenase ,0.12,gene,-0.0229508196721312
+acyl-CoA thioester hydrolase ,0.12,gene,0.0577777777777778
+glycerol-3-phosphate dehydrogenase subunit C ,0.12,gene,0.0494084899095338
+two-component system OmpR family osmolarity sensor histidine kinase EnvZ ,0.12,gene,0.125781792911744
+glycerol kinase ,0.12,gene,0.178082191780822
+3R-hydroxymyristoyl ACP dehydrase ,0.12,gene,0.0844444444444445
+shikimate kinase ,0.12,gene,0.0899470899470899
+sarcosine oxidase subunit delta ,0.12,gene,-0.0263929618768329
+homoserine kinase type II ,0.12,gene,0.165354330708661
+fructose-bisphosphate aldolase class II ,0.12,gene,-0.255878284923928
+dihydrofolate reductase ,0.12,gene,-0.242262540021345
+ATP-dependent RNA helicase RhlE ,0.12,gene,-0.180362860192103
+acetylornithine/N-succinyldiaminopimelate aminotransferase ,0.11,gene,0.131019036954087
+soluble lytic murein transglycosylase ,0.11,gene,0.0814030443414956
+thioredoxin reductase (NADPH) ,0.11,gene,0.0420560747663552
+cysteine synthase B ,0.11,gene,-0.548205489092189
+peptide deformylase ,0.11,gene,0.0133333333333333
+succinate dehydrogenase iron-sulfur protein ,0.11,gene,0.0781893004115227
+ubiquinone biosynthesis monooxygenase Coq7 ,0.11,gene,0.127397260273973
