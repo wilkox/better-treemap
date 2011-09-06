@@ -238,7 +238,7 @@ map.market <- function(id, area, group, color,
         stock.tree <- addGrob(stock.tree, textGrob(
                                                    x = unit(1, "lines"), y = unit(1, "npc") - unit(1, "lines"),
                                                    label = this.data$label[s],
-                                                   gp = gpar(col = "white"),
+                                                   gp = gpar(col = "black"),
                                                    name = "label",
                                                    just = c("left", "top")
                                                    ))
@@ -254,7 +254,7 @@ map.market <- function(id, area, group, color,
     
     if(lab[1]){
       group.tree <- addGrob(group.tree, textGrob(label = group.data$label[i],
-                                                  name = "label", gp = gpar(col = "white")))
+                                                  name = "label", gp = gpar(col = "black")))
     }
 
     ## Add group gTree to map gTree
