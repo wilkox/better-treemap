@@ -309,8 +309,8 @@ map.market <- function(id, area, group, color,
   ## Put map and top gTrees together
   
   mapmarket <- gTree(name = "MAPMARKET", children = gList(
-                                           rectGrob(gp=gpar(col="dark grey",
-                                                      fill="dark grey"),
+                                           rectGrob(gp=gpar(col="white",
+                                                      fill="white"),
                                                     name = "background"),
                                            top.tree,
                                            map.tree
