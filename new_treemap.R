@@ -87,8 +87,8 @@ map.market <- function(id, area, group, color,
   ## Two color gradient functions to map [-1,0] to [red, black] and
   ## [0,1] to [black, green].
   
-  color.ramp.pos <- colorRamp(c("white", "red"))
-  color.ramp.neg <- colorRamp(c("white", "lightblue"))
+  color.ramp.pos <- colorRamp(c("white", "red", bias=2))
+  color.ramp.neg <- colorRamp(c("white", "blue", bias=4))
 
   ## Map a vector with values in [-1,1] to a vector of rgb colors.
   
@@ -248,7 +248,7 @@ map.market <- function(id, area, group, color,
         rectwidth = gsub("npc", "", rectwidth, perl=TRUE)
         rectwidth = as.numeric(rectwidth)
         rectwidth = rectwidth * 100
-        widthfactor = (rectwidth / longest) / 1.4
+        widthfactor = (rectwidth / longest) / 5
 
         ##get rectangle height
         rectheight = stock.viewports[[s]]$height
@@ -264,7 +264,7 @@ map.market <- function(id, area, group, color,
                                                    ##THIS IS WHERE THE LABELS ARE MADE
                                                    x = unit(1, "lines"), y = unit(1, "npc") - unit(1, "lines"),
                                                    label = output,
-                                                   gp = gpar(col = "black", cex=textfactor),
+                                                   gp = gpar(col = "black", cex=textfactor, fontfamily="mono"),
                                                    name = "label",
                                                    just = c("left", "top")
                                                    ))
