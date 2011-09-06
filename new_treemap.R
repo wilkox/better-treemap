@@ -87,8 +87,8 @@ map.market <- function(id, area, group, color,
   ## Two color gradient functions to map [-1,0] to [red, black] and
   ## [0,1] to [black, green].
   
-  color.ramp.pos <- colorRamp(c("white", "green"))
-  color.ramp.neg <- colorRamp(c("white", "red"))
+  color.ramp.pos <- colorRamp(c("white", "red"))
+  color.ramp.neg <- colorRamp(c("white", "lightblue"))
 
   ## Map a vector with values in [-1,1] to a vector of rgb colors.
   
@@ -235,10 +235,24 @@ map.market <- function(id, area, group, color,
                          children = gList(rectGrob(name = "color")))
       
       if(lab[2]){
+        name = toString(this.data$label[s])
+        output = gsub(" ", "\n", name)
+        splitname = strsplit(name, " ")
+        for (i in splitname) {
+            namelengths = nchar(i)
+        }
+        longest = max(namelengths)
+        rectwidth = stock.viewports[[s]]$width
+        rectwidth = gsub("[^0-9]", "", rectwidth, perl=TRUE)
+        rectwidth = as.numeric(rectwidth)
+        rectwidth = rectwidth * 0.000000000001
+        print(rectwidth)
+        textfactor = 0.1 * rectwidth / longest
         stock.tree <- addGrob(stock.tree, textGrob(
+                                                   ##THIS IS WHERE THE LABELS ARE MADE
                                                    x = unit(1, "lines"), y = unit(1, "npc") - unit(1, "lines"),
-                                                   label = this.data$label[s],
-                                                   gp = gpar(col = "black"),
+                                                   label = output,
+                                                   gp = gpar(col = "black", cex=textfactor),
                                                    name = "label",
                                                    just = c("left", "top")
                                                    ))
