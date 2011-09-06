@@ -243,11 +243,10 @@ map.market <- function(id, area, group, color,
         }
         longest = max(namelengths)
         rectwidth = stock.viewports[[s]]$width
-        rectwidth = gsub("[^0-9]", "", rectwidth, perl=TRUE)
+        rectwidth = gsub("npc", "", rectwidth, perl=TRUE)
         rectwidth = as.numeric(rectwidth)
-        rectwidth = rectwidth * 0.000000000001
-        print(rectwidth)
-        textfactor = 0.1 * rectwidth / longest
+        rectwidth = rectwidth * 100
+        textfactor = (rectwidth / longest) / 1
         stock.tree <- addGrob(stock.tree, textGrob(
                                                    ##THIS IS WHERE THE LABELS ARE MADE
                                                    x = unit(1, "lines"), y = unit(1, "npc") - unit(1, "lines"),
