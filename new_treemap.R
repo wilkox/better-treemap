@@ -242,11 +242,24 @@ map.market <- function(id, area, group, color,
             namelengths = nchar(i)
         }
         longest = max(namelengths)
+
+        ##get rectangle width
         rectwidth = stock.viewports[[s]]$width
         rectwidth = gsub("npc", "", rectwidth, perl=TRUE)
         rectwidth = as.numeric(rectwidth)
         rectwidth = rectwidth * 100
-        textfactor = (rectwidth / longest) / 1
+        widthfactor = (rectwidth / longest) / 1.4
+
+        ##get rectangle height
+        rectheight = stock.viewports[[s]]$height
+        rectheight = gsub("npc", "", rectheight, perl=TRUE)
+        rectheight = as.numeric(rectheight)
+        rectheight = rectheight * 100
+        heightfactor = (rectheight / length(namelengths)) / 3.2
+
+        #the smallest factor becomes the cex, to fit in the rectangle
+        textfactor = min(c(heightfactor, widthfactor))
+
         stock.tree <- addGrob(stock.tree, textGrob(
                                                    ##THIS IS WHERE THE LABELS ARE MADE
                                                    x = unit(1, "lines"), y = unit(1, "npc") - unit(1, "lines"),
