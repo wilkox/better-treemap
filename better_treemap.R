@@ -244,7 +244,7 @@ better.treemap <- function(id, area, group, color,
                                                    ##THIS IS WHERE THE LABELS ARE MADE
                                                    x = unit(1, "lines"), y = unit(1, "npc") - unit(1, "lines"),
                                                    label = output,
-                                                   gp = gpar(col = "black", cex=textfactor, fontfamily="mono"),
+                                                   gp = gpar(col = "black", cex=textfactor),
                                                    name = "label",
                                                    just = c("left", "top")
                                                    ))
