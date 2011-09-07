@@ -249,14 +249,14 @@ better.treemap <- function(id, area, group, color,
         rectwidth = gsub("npc", "", rectwidth, perl=TRUE)
         rectwidth = as.numeric(rectwidth)
         rectwidth = rectwidth * 100
-        widthfactor = (rectwidth / longest) / 5
+        widthfactor = (rectwidth / longest) / 0.55
 
         ##get rectangle height
         rectheight = stock.viewports[[s]]$height
         rectheight = gsub("npc", "", rectheight, perl=TRUE)
         rectheight = as.numeric(rectheight)
         rectheight = rectheight * 100
-        heightfactor = (rectheight / length(namelengths)) / 3.2
+        heightfactor = (rectheight / length(namelengths)) / 0.4
 
         #the smallest factor becomes the cex, to fit in the rectangle
         textfactor = min(c(heightfactor, widthfactor))
@@ -265,7 +265,7 @@ better.treemap <- function(id, area, group, color,
                                                    ##THIS IS WHERE THE LABELS ARE MADE
                                                    x = unit(1, "lines"), y = unit(1, "npc") - unit(1, "lines"),
                                                    label = output,
-                                                   gp = gpar(col = "black", cex=textfactor),
+                                                   gp = gpar(col = "black", fontsize=textfactor),
                                                    name = "label",
                                                    just = c("left", "top")
                                                    ))
@@ -281,8 +281,8 @@ better.treemap <- function(id, area, group, color,
     
     if(lab[1]){
       print(c("LABEL IS ", group.data$label))
-      group.tree <- addGrob(group.tree, textGrob(label = group.data$label[i], just = c("left", "bottom"),
-                                                  name = "label", gp = gpar(col = "black")))
+      group.tree <- addGrob(group.tree, textGrob(label = group.data$label[i], just = c("left", "top"),
+                                                  name = "label", gp = gpar(col = "black", fontface = "bold")))
     }
 
     ## Add group gTree to map gTree
@@ -312,7 +312,7 @@ better.treemap <- function(id, area, group, color,
   
   top.list <-
     gList(textGrob(label = main, y = unit(0.7, "npc"),
-                   just = c("center", "center"), gp = gpar(cex = 2)),
+                   just = c("left", "bottom"), gp = gpar(cex = 2)),
           
           segmentsGrob(x0 = seq(0, 1, by = 0.25), y0 = unit(0.25, "npc"),
                        x1 = seq(0, 1, by = 0.25), y1 = unit(0.2, "npc")),
@@ -326,7 +326,7 @@ better.treemap <- function(id, area, group, color,
           textGrob(label = format(l.end * seq(-1, 1, by = 0.5), trim = TRUE),
                    x = seq(0, 1, by = 0.25), y = 0.1,
                    default.units = "npc",
-                   just = c("center", "center"),
+                   just = c("left", "bottom"),
                    gp = gpar(col = "black", cex = 0.8, fontface = "bold")))
                    
   options(op)
