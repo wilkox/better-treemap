@@ -201,7 +201,7 @@ better.treemap <- function(id, area, group, color,
 
   ## Create gTree representing the actual map of the market
 
-  map.viewport <- viewport(x = 0.05, y = 0.05, width = 0.9, height = 0.75,
+  map.viewport <- viewport(x = 0.05, y = 0.05, width = 0.9, height = 0.75, clip = "inherit",
                            default.units = "npc", name = "MAP",
                            just = c("left", "bottom"))
   
@@ -260,12 +260,13 @@ better.treemap <- function(id, area, group, color,
 
         #the smallest factor becomes the cex, to fit in the rectangle
         textfactor = min(c(heightfactor, widthfactor))
+        print(c("Textfactor is " , textfactor))
 
         stock.tree <- addGrob(stock.tree, textGrob(
                                                    ##THIS IS WHERE THE LABELS ARE MADE
-                                                   x = unit(1, "lines"), y = unit(1, "npc") - unit(1, "lines"),
+                                                   x = unit(0.1, "lines"), y = unit(1, "npc") - unit(0.1, "lines"),
                                                    label = output,
-                                                   gp = gpar(col = "black", fontsize=textfactor),
+                                                   gp = gpar(col = "black", fontsize="10"),
                                                    name = "label",
                                                    just = c("left", "top")
                                                    ))
