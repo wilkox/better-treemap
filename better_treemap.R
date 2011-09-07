@@ -1,24 +1,4 @@
-################################################################################
-##
-## $Id: map.market.R 1327 2009-06-11 13:14:09Z enos $
-##
-## Plot a "map" of a given portfolio, based on the Map of the Market
-##
-################################################################################
-
-## The parameters "id", "area", "group", and "color" must be vectors
-## of the same length.  "id" stores the labels for each stock.  "area"
-## stores the values used to compute the area of rectangles in the
-## map.  "group" stores the group of each stock.  "color" stores the
-## values used to compute the color of the rectangles.  "lab"
-## specifies whether labels should be printed; the default is to print
-## group labels, but not stock labels.  "scale" specifies the number
-## of units away from zero that will be represented by the color.  All
-## values for color outside of this range will appear the same.  If
-## null, the most extreme value for color is used.  "print" is a
-## logical specifying whether the map should be drawn.
-
-map.market <- function(id, area, group, color,
+better.treemap <- function(id, area, group, color,
                        scale = NULL,
                        lab   = c(TRUE, FALSE),
                        main  = "Map of the Market",
@@ -352,17 +332,3 @@ map.market <- function(id, area, group, color,
   
   invisible(mapmarket)
 }
-#read in the data
-data = read.csv("matrix.csv", head=TRUE);
-
-#load the library
-library(portfolio)
-
-#set the output
-pdf("treemap.pdf");
-
-#draw the treemap
-map.market(id=data$name, area=data$contrib, group=data$category, color=data$reldif, lab=c(TRUE, TRUE), main="Contribution of Ks to variation between N and S")
-
-#kill the output device
-dev.off()
