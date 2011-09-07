@@ -238,8 +238,8 @@ map.market <- function(id, area, group, color,
         name = toString(this.data$label[s])
         output = gsub(" ", "\n", name)
         splitname = strsplit(name, " ")
-        for (i in splitname) {
-            namelengths = nchar(i)
+        for (hello in splitname) {
+            namelengths = nchar(hello)
         }
         longest = max(namelengths)
 
@@ -279,7 +279,8 @@ map.market <- function(id, area, group, color,
                                                name = "border"))
     
     if(lab[1]){
-      group.tree <- addGrob(group.tree, textGrob(label = group.data$label[i],
+      print(c("LABEL IS ", group.data$label))
+      group.tree <- addGrob(group.tree, textGrob(label = group.data$label[i], just = c("left", "bottom"),
                                                   name = "label", gp = gpar(col = "black")))
     }
 
