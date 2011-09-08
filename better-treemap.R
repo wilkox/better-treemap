@@ -19,6 +19,15 @@
 #You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+flow.text.to.box <- function(thetext, thewidth) {
+
+  textregex = as.character(cat("(.{", thewidth, "}[^ ]+) "))
+
+  thetext = gsub("(.{8}[^ ]+) ", "\\1\n",thetext,perl=TRUE)
+  return(thetext)
+  
+}
+
 better.treemap <- function(id, area, group, color,
                        scale = NULL,
                        lab   = c(TRUE, FALSE),
@@ -281,8 +290,7 @@ better.treemap <- function(id, area, group, color,
                                                name = "border"))
     
     if(lab[1]){
-      print(c("LABEL IS ", group.data$label))
-      group.tree <- addGrob(group.tree, textGrob(label = group.data$label[i], just=c("left", "bottom"), x=0.02, y=0.02,
+      group.tree <- addGrob(group.tree, textGrob(label = flow.text.to.box(toString(group.data$label[i]), 6), just=c("left", "bottom"), x=0.02, y=0.02,
                                                   name = "label", gp = gpar(col = "black", fontface = "bold")))
     }
 
