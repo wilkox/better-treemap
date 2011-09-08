@@ -282,7 +282,7 @@ better.treemap <- function(id, area, group, color,
     
     if(lab[1]){
       print(c("LABEL IS ", group.data$label))
-      group.tree <- addGrob(group.tree, textGrob(label = group.data$label[i], just = c("left", "top"),
+      group.tree <- addGrob(group.tree, textGrob(label = group.data$label[i], just=c("left", "bottom"), x=0.02, y=0.02,
                                                   name = "label", gp = gpar(col = "black", fontface = "bold")))
     }
 
