@@ -98,7 +98,7 @@ better.treemap <- function(id, area, group, color,
   ## [0,1] to [black, green].
   
   color.ramp.pos <- colorRamp(c("white", "#FFBFBF", bias=2))
-  color.ramp.neg <- colorRamp(c("white", "#AAE7FC", bias=12))
+  color.ramp.neg <- colorRamp(c("white", "#9F9FFF", bias=12))
 
   ## Map a vector with values in [-1,1] to a vector of rgb colors.
   
